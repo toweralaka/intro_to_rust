@@ -1,0 +1,14 @@
+
+- No unused variable. If required, prefix with an underscore
+- enums have implicit values - zero-indexed
+- const cannot be modified, only static(which is considered unsafe)
+- There is safety in static typing but the compiler can infer if bindings are not annotated
+- variable bindings are immutable except by the `mut` keyword
+- variable binding can be shadowed using `let`
+- data is frozen when bound immutably until the immutable binding(shadowing) goes out of scope
+- type aliasing can help give a really long variable name a temp short one
+- The From trait can give the Into trait but the Into trait does not give the From trait
+- No assigning when borrowing is in play
+- Use label in nesting loops so that `break` and `continue` can refer to which loop
+- Loop can rerturn a value if the value is put after `break`
+- 
